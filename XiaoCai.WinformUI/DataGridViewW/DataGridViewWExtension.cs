@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Printing.DataGridViewPrint.Tools;
+//using Printing.DataGridViewPrint.Tools;
 using System.Drawing.Printing;
 using System.Drawing;
 using System.Windows.Forms;
@@ -22,39 +22,39 @@ namespace XiaoCai.WinformUI
         {
             DataGridView dgvToPrint = dgv.Copy(toPrintCols, toPrintRows);
 
-            var printProvider = PrintingDataGridViewProvider.Create(
-                 printDocument,
-                 dgvToPrint,
-                  printLevelByLevel,
-                 centerPage,
-                 fitColToPage,
-                 new TitlePrintBlock()
-                 {
-                     ForeColor = Color.DarkBlue,
-                     Font = new Font(SystemFonts.CaptionFont.FontFamily, 16),
-                     Title = printDocument.DocumentName
-                 },
-                 null,
-                 null);
+            //var printProvider = PrintingDataGridViewProvider.Create(
+            //     printDocument,
+            //     dgvToPrint,
+            //      printLevelByLevel,
+            //     centerPage,
+            //     fitColToPage,
+            //     new TitlePrintBlock()
+            //     {
+            //         ForeColor = Color.DarkBlue,
+            //         Font = new Font(SystemFonts.CaptionFont.FontFamily, 16),
+            //         Title = printDocument.DocumentName
+            //     },
+            //     null,
+            //     null);
 
-            bool bContinue = true;
-            if (showPrintSetDlg)//显示打印设置对话框
-                bContinue = new PrintDialog().ShowDialog() == DialogResult.OK;
-            if (bContinue)
-            {
-                if (showPreviewDlg)//打印预览
-                {
-                    //printDocument.PrintPage += new PrintPageEventHandler(printDocument_PrintPage);
-                    PrintPreviewDialog previewdlg = new PrintPreviewDialog();
-                    previewdlg.ShowIcon = false;
-                    previewdlg.Document = printDocument;
-                    previewdlg.ShowDialog();
-                }
-                else
-                {
-                    printDocument.Print();
-                }
-            }
+            //bool bContinue = true;
+            //if (showPrintSetDlg)//显示打印设置对话框
+            //    bContinue = new PrintDialog().ShowDialog() == DialogResult.OK;
+            //if (bContinue)
+            //{
+            //    if (showPreviewDlg)//打印预览
+            //    {
+            //        //printDocument.PrintPage += new PrintPageEventHandler(printDocument_PrintPage);
+            //        PrintPreviewDialog previewdlg = new PrintPreviewDialog();
+            //        previewdlg.ShowIcon = false;
+            //        previewdlg.Document = printDocument;
+            //        previewdlg.ShowDialog();
+            //    }
+            //    else
+            //    {
+            //        printDocument.Print();
+            //    }
+            //}
         }
         //修改：何晓明 20110722 打印页数
         //static int iPages = 0;

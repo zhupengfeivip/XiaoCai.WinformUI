@@ -467,14 +467,14 @@ namespace XiaoCai.WinformUI
                         if (obj is bool && bool.Parse(obj.ToString()))
                         {
                             cell = cells[row + 1, k];
-                            cell.Style.Font.Color = this[j, i].Style.ForeColor;
+                            //cell.Style.Font.Color = this[j, i].Style.ForeColor;
                             obj = this[j, i].Value;
                             if (obj != null)
                             {
                                 var typ = obj.GetType();
                                 if (typ == typeof(DateTime))
                                 {
-                                    cell.Style.Custom = "yyyy-mm-dd hh:mm:ss";
+                                    //cell.Style.Custom = "yyyy-mm-dd hh:mm:ss";
                                     cell.PutValue(obj.ToString());
                                 }
                                 else if (typ == typeof(string))
@@ -544,14 +544,14 @@ namespace XiaoCai.WinformUI
                             if (obj is bool && bool.Parse(obj.ToString()))
                             {
                                 cell = cells[row + 1, k];
-                                cell.Style.Font.Color = this[j, i].Style.ForeColor;
+                                //cell.Style.Font.Color = this[j, i].Style.ForeColor;
                                 obj = this[j, i].Value;
                                 if (obj != null)
                                 {
                                     var typ = obj.GetType();
                                     if (typ == typeof(DateTime))
                                     {
-                                        cell.Style.Custom = "yyyy-mm-dd hh:mm:ss";
+                                        //cell.Style.Custom = "yyyy-mm-dd hh:mm:ss";
                                         cell.PutValue(obj.ToString());
                                     }
                                     else if (typ == typeof(string))
@@ -575,14 +575,14 @@ namespace XiaoCai.WinformUI
                             if (obj == null)
                                 continue;
                             cell = cells[row + 1, k];
-                            cell.Style.Font.Color = this[j, i].Style.ForeColor;
+                            //cell.Style.Font.Color = this[j, i].Style.ForeColor;
                             obj = this[j, i].Value;
                             if (obj != null)
                             {
                                 var typ = obj.GetType();
                                 if (typ == typeof(DateTime))
                                 {
-                                    cell.Style.Custom = "yyyy-mm-dd hh:mm:ss";
+                                    //cell.Style.Custom = "yyyy-mm-dd hh:mm:ss";
                                     cell.PutValue(obj.ToString());
                                 }
                                 else if (typ == typeof(string))
@@ -633,8 +633,8 @@ namespace XiaoCai.WinformUI
                     cell.SetStyle(styple);
                     if (redFieldInfo.Count > 0)
                     {
-                        foreach (string strRedInfo in redFieldInfo)
-                            if (col.HeaderText.IndexOf(strRedInfo, System.StringComparison.Ordinal) != -1) cell.Style.Font.Color = Color.Red;
+                        //foreach (string strRedInfo in redFieldInfo)
+                        //    if (col.HeaderText.IndexOf(strRedInfo, System.StringComparison.Ordinal) != -1) cell.Style.Font.Color = Color.Red;
                     }
 
 
@@ -651,7 +651,7 @@ namespace XiaoCai.WinformUI
                             if (obj is bool && bool.Parse(obj.ToString()))
                             {
                                 cell = cells[row + 1, k];
-                                cell.Style.Font.Color = this[j, i].Style.ForeColor;
+                                //cell.Style.Font.Color = this[j, i].Style.ForeColor;
 
                                 obj = this[j, i].Value;
                                 if (obj != null)
@@ -659,7 +659,7 @@ namespace XiaoCai.WinformUI
                                     var typ = obj.GetType();
                                     if (typ == typeof(DateTime))
                                     {
-                                        cell.Style.Custom = "yyyy-mm-dd hh:mm:ss";
+                                        //cell.Style.Custom = "yyyy-mm-dd hh:mm:ss";
                                         cell.PutValue(obj.ToString());
                                     }
                                     else if (typ == typeof(string))
@@ -684,7 +684,7 @@ namespace XiaoCai.WinformUI
                                 continue;
                             sheet.AutoFitRow(row + 1);
                             cell = cells[row + 1, k];
-                            cell.Style.Font.Color = this[j, i].Style.ForeColor;
+                            //cell.Style.Font.Color = this[j, i].Style.ForeColor;
                             //cell.Style.Font.Color = Color.Yellow;
                             obj = this[j, i].Value;
                             if (obj != null)
@@ -692,7 +692,7 @@ namespace XiaoCai.WinformUI
                                 var typ = obj.GetType();
                                 if (typ == typeof(DateTime))
                                 {
-                                    cell.Style.Custom = "yyyy-mm-dd hh:mm:ss";
+                                    //cell.Style.Custom = "yyyy-mm-dd hh:mm:ss";
                                     cell.PutValue(obj.ToString());
                                 }
                                 else if (typ == typeof(string))
@@ -755,7 +755,7 @@ namespace XiaoCai.WinformUI
                             var typ = obj.GetType();
                             if (typ == typeof(DateTime))
                             {
-                                cell.Style.Custom = "yyyy-mm-dd hh:mm:ss";
+                                //cell.Style.Custom = "yyyy-mm-dd hh:mm:ss";
                                 cell.PutValue(obj.ToString());
                             }
                             else if (typ == typeof(string))

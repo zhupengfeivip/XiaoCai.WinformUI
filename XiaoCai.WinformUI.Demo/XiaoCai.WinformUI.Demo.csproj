@@ -38,9 +38,6 @@
     <Reference Include="Aspose.Cells">
       <HintPath>..\XiaoCai.WinformUI\bin\Debug\Aspose.Cells.dll</HintPath>
     </Reference>
-    <Reference Include="Printing.DataGridViewPrint">
-      <HintPath>..\XiaoCai.WinformUI\bin\Debug\Printing.DataGridViewPrint.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
